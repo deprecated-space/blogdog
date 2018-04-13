@@ -31,9 +31,9 @@ export default {
 .main {
   // min-width: 200px;
   // max-width: 980px;
-  width: 580px;
-  margin: 0 auto;
-  padding: 45px;
+  // width: 580px;
+  // margin: 0 auto;
+  // padding: 45px;
   background: #fff;
   .item {
     padding-bottom: 5px;

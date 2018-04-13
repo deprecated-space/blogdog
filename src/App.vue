@@ -36,5 +36,11 @@ export default {
 .site-content {
   flex: 1;
   background: #fff;
+  box-sizing: border-box;
+  min-width: 200px;
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 45px;
 }
 </style>
