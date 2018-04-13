@@ -43,6 +43,8 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
+    
+    // 如果开发中需要引入本地图片，这里必须是绝对地址，否则图片引用会有问题
     assetsPublicPath: './',
 
     /**

@@ -26,7 +26,7 @@ export default {
         // 图片地址替换
         let p = /(!\[.*\])(\()(.*)\.(.*)(\))/g
       
-        console.log(markdownContent)
+        // console.log(markdownContent)
         
         markdownContent = markdownContent.replace(p, (a, b, c, d, e, f) => {
           return b + c 
@@ -35,6 +35,12 @@ export default {
         })
 
         this.content = marked(markdownContent)
+
+        setTimeout(() => {
+          document.querySelectorAll('pre code').forEach(block => {
+            hljs.highlightBlock(block);
+          })
+        }, 0)
       })
   }
 }
