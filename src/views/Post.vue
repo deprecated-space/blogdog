@@ -1,5 +1,5 @@
 <template>
-  <div class="markdown-body post-content" v-html="content">
+  <div class="markdown-body post-content" v-html="content" v-highlightjs>
   </div>
 </template>
 
@@ -36,11 +36,11 @@ export default {
 
         this.content = marked(markdownContent)
 
-        setTimeout(() => {
-          document.querySelectorAll('pre code').forEach(block => {
-            hljs.highlightBlock(block);
-          })
-        }, 0)
+        // setTimeout(() => {
+        //   document.querySelectorAll('pre code').forEach(block => {
+        //     hljs.highlightBlock(block);
+        //   })
+        // }, 0)
       })
   }
 }

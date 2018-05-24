@@ -5,6 +5,12 @@ import App from './App'
 import router from './router'
 import NProgress from 'nprogress' // Progress 进度条
 import 'nprogress/nprogress.css'// Progress 进度条样式
+import hljs from 'highlight.js'
+
+Vue.directive('highlightjs', function(el) {
+  let blocks = el.querySelectorAll('pre code')
+  Array.prototype.forEach.call(blocks, hljs.highlightBlock)
+})
 
 Vue.config.productionTip = false
 
